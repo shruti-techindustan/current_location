@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CurrentLocation</string>
+    <string name="gps_network_not_enabled">Location not enable</string>
+    <string name="open_location_settings">Please open setting</string>
+</resources>

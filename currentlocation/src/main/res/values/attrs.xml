@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<declare-styleable name="customlibrary">
+        <attr name="duration" format="float" />
+
+    </declare-styleable>-->
+
+    <declare-styleable name="customlibrary">
+        <attr name="duration" />
+
+    </declare-styleable>
+</resources>

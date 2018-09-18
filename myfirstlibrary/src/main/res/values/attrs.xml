@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="customlibrary">
+        <attr name="titleText" format="color" />
+        <attr name="bg_color" format="color"></attr>
+
+        <attr name="text_color" format="color"></attr>
+        <attr name="hint_text_color" format="color"></attr>
+        <attr name="text_size" format="float"></attr>
+        <attr name="drop_down_arrow" format="integer"></attr>
+        <attr name="dialog_bg_color" format="color"></attr>
+        <attr name="dialog_list_color" format="color"></attr>
+        <attr name="dialog_full_screen" format="boolean"></attr>
+        <attr name="bg_elevation" format="float"></attr>
+        <attr name="bg_radius" format="integer"></attr>
+        <attr name="list_divider_color" format="color"></attr>
+        <attr name="list_divider_size" format="integer"></attr>
+        <attr name="list_is_divider" format="boolean"></attr>
+        <attr name="list_item_text_color" format="float"></attr>
+        <attr name="search_bg_color" format="color"></attr>
+        <attr name="show_dialog_title" format="boolean"></attr>
+        <attr name="dialog_title_color" format="color"></attr>
+        <attr name="dialog_title_bg_color" format="color"></attr>
+        <attr name="list_item_color" format="color"></attr>
+        <attr name="show_search_bar" format="boolean"></attr>
+        <attr name="is_divider" format="boolean"></attr>
+        <attr name="dialog_title" format="string"></attr>
+
+
+
+    </declare-styleable>
+</resources>

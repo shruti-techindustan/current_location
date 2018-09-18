@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customlibrary="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.techindustan.myfirstlibrary.MyView
+        android:id="@+id/myView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        customlibrary:bg_color="#fff"
+        customlibrary:bg_elevation="2.0"
+        customlibrary:bg_radius="10"
+
+        customlibrary:dialog_title="All Cities"
+        customlibrary:dialog_bg_color="@color/white"
+        customlibrary:dialog_full_screen="true"
+        customlibrary:dialog_list_color="@color/white"
+        customlibrary:hint_text_color="@color/text_color"
+        customlibrary:text_color="@color/colorPrimaryDark"
+        customlibrary:text_size="15.0"
+        customlibrary:titleText="@color/colorPrimaryDark"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_weight="1"
+        customlibrary:layout_constraintGuide_begin="116dp" />
+
+
+</android.support.constraint.ConstraintLayout>
