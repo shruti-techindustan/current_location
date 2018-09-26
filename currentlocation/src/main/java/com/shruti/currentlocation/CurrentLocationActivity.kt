@@ -32,11 +32,8 @@ open class CurrentLocationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         currentLocationView = CurrentLocationView(this)
 
-        if (hasPermission()) {
-            currentLocationView.startLocationUpdates()
-        } else {
+        if (!hasPermission()) {
             ActivityCompat.requestPermissions(this, permissions.toTypedArray(), PERMISSION_REQUEST_CODE)
-
         }
 
     }
@@ -54,7 +51,7 @@ open class CurrentLocationActivity : AppCompatActivity() {
                         var isDontAsk = ActivityCompat.shouldShowRequestPermissionRationale(this,
                                 permissions[0])
                         if (!isDontAsk) {
-                            goToPermissionSettings()
+                            //goToPermissionSettings()
                             isNeverAskAgain = true
                         } else {
 
@@ -91,7 +88,7 @@ open class CurrentLocationActivity : AppCompatActivity() {
 
         } else {
             if (isNeverAskAgain) {
-                if (!isLocationEnabled()) {
+                if (!hasPermission()) {
                     goToPermissionSettings()
                     // isLocationSetting = false
                 }
@@ -180,7 +177,13 @@ open class CurrentLocationActivity : AppCompatActivity() {
     }
 
     fun setLocationDuration(duration: Long) {
+
         currentLocationView.setDuration(duration)
+    }
+
+    fun stopLocation() {
+
+        currentLocationView.stopLocationUpdates()
     }
 
 

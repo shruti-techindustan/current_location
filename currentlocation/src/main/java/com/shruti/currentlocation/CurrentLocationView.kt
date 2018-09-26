@@ -24,6 +24,7 @@ class CurrentLocationView : LinearLayout {
         getCurrentLocation = context as GetCurrentLocation
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(context!!)
+
         locationCallback = object : LocationCallback() {
             override fun onLocationResult(locationResult: LocationResult?) {
                 locationResult ?: return
@@ -41,8 +42,7 @@ class CurrentLocationView : LinearLayout {
 
 
     fun locationRequestCreate() {
-
-        locationRequest = LocationRequest()
+ locationRequest = LocationRequest()
         locationRequest.setInterval(duration)
         locationRequest.setFastestInterval(duration)
         locationRequest.setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY)
@@ -69,6 +69,13 @@ class CurrentLocationView : LinearLayout {
 
         duration = values
         locationRequest.setInterval(duration)
+
+
+
+
+
+
+       // locationRequestCreate()
 
 
     }

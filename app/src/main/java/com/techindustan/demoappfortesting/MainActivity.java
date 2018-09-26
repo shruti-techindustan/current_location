@@ -17,7 +17,6 @@ public class MainActivity extends CurrentLocationActivity implements ItemClick, 
     MyView myView;
     List<String> alList = new ArrayList<>();
 
-    CurrentLocationView currentLocationView;
 
 
 
@@ -27,10 +26,12 @@ public class MainActivity extends CurrentLocationActivity implements ItemClick, 
         setContentView(R.layout.activity_main);
         myView = findViewById(R.id.myView);
 
+
         alList.add("ABC");
         alList.add("EFG");
         alList.add("JHK");
         alList.add("MNOO");
+
 
         myView.setArrayList((ArrayList<String>) alList);
 
@@ -40,13 +41,13 @@ public class MainActivity extends CurrentLocationActivity implements ItemClick, 
     @Override
     public void itemClick(int position, Object val) {
         Toast.makeText(this, "" + position, Toast.LENGTH_SHORT).show();
-
+            stopLocation();
     }
 
     @Override
     public void getCurrentLocation(Location loc) {
         Toast.makeText(this, "location is :" + loc.getLongitude(), Toast.LENGTH_SHORT).show();
-       // currentLocationView.stopLocationUpdates();
+        //stopLocation();
 
     }
 

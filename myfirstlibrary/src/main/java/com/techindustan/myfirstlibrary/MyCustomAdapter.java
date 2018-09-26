@@ -87,7 +87,6 @@ public class MyCustomAdapter extends RecyclerView.Adapter<MyCustomAdapter.MyView
             countryList.clear();
             for (String str : alTemporaryList) {
                 if (str.toLowerCase().contains(s.toLowerCase())) {
-                    Log.e("alTempop", s.toString());
                     countryList.add(str);
 
                 }
