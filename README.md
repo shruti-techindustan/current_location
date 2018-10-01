@@ -1,13 +1,15 @@
-Get Current Location 
-. Eliminate all the repeate process of requesting the runtime permission for getting the current location.
-. Just extend the CurrentLocation Activity and implement the CurrentLocationView.GetCurrentLocation. The location get updated in getCurrentLocation(Location loc) method.
+<b>Get Current Location</b>
+<p><ul>
+<li>Eliminate all the repeate process of requesting the runtime permission for getting the current location</li>
+<li>Just extend the CurrentLocation Activity and implement the CurrentLocationView.GetCurrentLocation. The location get updated in getCurrentLocation(Location loc) method.</li>
+</p>
 
 
 
 
 
-
-<b>Example:</b>
+<b>Example:</b><br/>
+<code>
 package com.techindustan.demoappfortesting;
 
 import android.location.Location;
@@ -43,3 +45,4 @@ public class MainActivity extends CurrentLocationActivity implements  CurrentLoc
 
 
 }
+</code>
