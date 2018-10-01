@@ -18,11 +18,9 @@ import android.widget.Toast;
 
 import com.shruti.currentlocation.CurrentLocationActivity;
 import com.shruti.currentlocation.CurrentLocationView;
-import com.techindustan.myfirstlibrary.ItemClick;
-import com.techindustan.myfirstlibrary.MyView;
 
-import java.util.ArrayList;
-import java.util.List;
+
+
 
 public class MainActivity extends CurrentLocationActivity implements  CurrentLocationView.GetCurrentLocation {
 
