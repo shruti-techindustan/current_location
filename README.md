@@ -9,13 +9,11 @@
 
 
 <b>Example:</b><br/>
-<code>
+<code><br/>
 package com.techindustan.example;
-
 import android.location.Location;
 import android.os.Bundle;
 import android.widget.Toast;
-
 import com.shruti.currentlocation.CurrentLocationActivity;
 import com.shruti.currentlocation.CurrentLocationView;
 
