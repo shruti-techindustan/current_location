@@ -5,7 +5,9 @@ Get Current Location
 
 
 
-Example:
+
+
+<b>Example:</b>
 package com.techindustan.demoappfortesting;
 
 import android.location.Location;
