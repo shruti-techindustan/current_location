@@ -10,7 +10,7 @@
 
 <b>Example:</b><br/>
 <code>
-package com.techindustan.demoappfortesting;
+package com.techindustan.example;
 
 import android.location.Location;
 import android.os.Bundle;
