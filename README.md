@@ -13,7 +13,8 @@
    
    
    <b>    implementation 'com.github.shruti-mahajan:current_location:1.1' </b> <br/>
-	<b>  maven { url 'https://jitpack.io' }  </b> <br/>
+	
+   <b>  maven { url 'https://jitpack.io' }  </b> <br/>
    
 
 public class MainActivity extends CurrentLocationActivity implements  CurrentLocationView.GetCurrentLocation {
